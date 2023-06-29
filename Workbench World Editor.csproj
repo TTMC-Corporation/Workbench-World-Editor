@@ -3,14 +3,28 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net7.0-windows</TargetFramework>
-    <RootNamespace>Workbench_World_Editor</RootNamespace>
+    <RootNamespace>Workbench.Editor</RootNamespace>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>hammer.ico</ApplicationIcon>
+    <AssemblyName>wbedit</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="hammer.ico">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Raylib-CsLo" Version="4.2.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="hammer.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
